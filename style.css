@@ -27,18 +27,18 @@ background-position: 50% 50%;
 
 /* Image for Parallax Section */ 
 .paralsec {
-background-image: url("https://img.webnots.com/2017/05/parallax.jpg");
+background-image: url("parallax_01.jpg");
 }
 
 .paralsec1 {
-background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");}
+background-image: url("parallax_02.jpg");}
 
 .paralsec2 {
-background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+background-image: url("parallax_03.jpg");
 }
 
 .paralsec3 {
-background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+background-image: url("parallax_03.jpg");
 }
 
 /* Add more images for more sections */
