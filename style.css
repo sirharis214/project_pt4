@@ -1,0 +1,283 @@
+/* DEVELOPER Haris Nasir, IS117-006, Spring 2018 */
+
+/* Header Parallax Element Style*/ 
+.paral {
+min-height: 600px;
+background-attachment: fixed;
+background-size: cover;
+background-position: 50% 50%;
+}
+
+	/* Paragraph for Parallax Section */ 
+	.paral p {
+	font-size: 24px;
+	color:#f5f5f5;
+	text-align: center;
+	line-height: 60px;
+	}
+
+	/* Heading for Parallax Section */ 
+	.paral h1 {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 60px;
+	text-align: center;
+	padding-top: 60px;
+	line-height: 100px;
+	}
+
+/* Image for Parallax Section */ 
+.paralsec {
+background-image: url("https://img.webnots.com/2017/05/parallax.jpg");
+}
+
+.paralsec1 {
+background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");}
+
+.paralsec2 {
+background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+}
+
+.paralsec3 {
+background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+}
+
+/* Add more images for more sections */
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{margin-bottom: 0;}
+
+	/* Footer */
+	.wn-footer {
+	padding: 2.5rem 0;
+	text-align: center;
+	color: white;
+	background-color: #607D8B;
+	border-top: .05rem solid #e5e5e5;
+	}
+
+	.wn-footer a {
+	color: yellow;
+	}
+
+/*NAV BAR STYLE */
+
+#header h1 {
+  margin: 0px;
+  padding: 100px 0px;
+  color: #FFF;
+  font: bold 40px 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+  padding: 10px 20px;
+  line-height: 1.5;
+}
+
+#header {
+  margin: 0px; padding: 0px;
+  position: relative;
+  background: #333;
+  width: 100%; height: 250px;
+}
+
+#navbar {
+  margin: 0px; padding: 0px;
+  position: relative;
+  background: #8F8F8F;
+  background: linear-gradient(#8F8F8F 0%, #555 50%, #444 51%, #222 100%);
+  text-align: center;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  width: 100%; height: 50px;
+}
+
+#navbar.fixedattop {
+  position: fixed; top: 0px;
+}
+
+#navbar a {
+  display: inline-block;
+  margin: 12px 15px; padding: 5px 0px;
+  background: #999;
+  background: linear-gradient(#999, #333);
+  color: #FFF;
+  font: 14px 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  text-decoration: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.5) inline;
+  width: 100px;
+}
+
+#navbar a:hover {
+  background: #333;
+  background: linear-gradient(#222, #333);
+}
+
+#content {
+  margin: 0px;
+  padding: 20px 0px 0px 0px;
+}
+
+/*Booking BUTTON CSS*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-size: 140%;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+/*Cards*/
+
+.card-footer{
+	text-align: center;
+
+}
+.frontside #atika{
+	height: 250px;
+	width: 300px;
+}
+.frontside img{
+	height: 250px;
+	width: 300px;
+}
+
+.image-flip:hover .backside, .image-flip.hover .backside {
+-webkit-transform: rotateY(0deg);
+-moz-transform: rotateY(0deg);
+-o-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+
+.image-flip:hover .frontside, .image-flip.hover .frontside {
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+
+.image-flip {
+margin-bottom:200px;
+width: 300px;
+height: 250px;
+}
+
+.mainflip {
+-webkit-transition: 1s;
+-webkit-transform-style: preserve-3d;
+-ms-transition: 1s;
+-moz-transition: 1s;
+-moz-transform: perspective(1000px);
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transition: 1s;
+transform-style: preserve-3d;
+position: relative;
+}
+
+.frontside, .backside {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: 1s;
+-webkit-transform-style: preserve-3d;
+-moz-transition: 1s;
+-moz-transform-style: preserve-3d;
+-o-transition: 1s;
+-o-transform-style: preserve-3d;
+-ms-transition: 1s;
+-ms-transform-style: preserve-3d;
+transition: 1s;
+transform-style: preserve-3d;
+position: absolute;
+top: 0;
+left: 0;
+margin-left: 30%;
+}
+
+.frontside {
+-webkit-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+z-index: 2;
+}
+
+.backside {
+color: white;
+background: black;
+-webkit-transform: rotateY(-180deg);
+-moz-transform: rotateY(-180deg);
+-o-transform: rotateY(-180deg);
+-ms-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.card, .card-img-top {
+border-radius: 0;
+}
+
+.backside .card{
+	margin-left: 20px;
+}
+/*Prevent the 3 cards from floating to new lines*/
+.card-group div{
+	display: inline-block;
+}
+.card-group{
+	margin-left: 100px;
+}
+
+
+/*Pricing Cards paralax 3 */
+#package .card{
+	background-color: black;
+	color:white;
+	opacity: .6;
+	width: 400px;
+	margin:0 auto;
+	padding:2px;
+}
+#package h1{
+	padding: 0px;
+}
+#package li{
+	font-size: x-large;
+}
+
+ul li  {
+ margin:0px 0px 1px 10px;
+}
